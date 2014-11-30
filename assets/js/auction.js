@@ -7,9 +7,15 @@
         console.log("Request Failed: " + err);
     });
 
+    $("#ex2").slider({});
+
+    $("#search-container").find(".input-group.date").datepicker({
+        autoclose: true
+    });
+
     $(".search").click(function () {
         $("#home-container").hide();
         $("#search-container").show();
         return false;
     });
-})();
+}());
